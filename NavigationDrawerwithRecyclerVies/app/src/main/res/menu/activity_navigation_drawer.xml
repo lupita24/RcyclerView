@@ -8,7 +8,7 @@
             android:title="Mi cuenta" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/prenda"
+            android:icon="@drawable/ropa"
             android:title="Mis prendas" />
         <item
             android:id="@+id/nav_slideshow"
@@ -16,7 +16,7 @@
             android:title="Tienda" />
         <item
             android:id="@+id/nav_manage"
-            android:icon="@drawable/configuracion"
+            android:icon="@drawable/config"
             android:title="Configuración" />
     </group>
 
@@ -24,7 +24,7 @@
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:icon="@drawable/comentario"
+                android:icon="@drawable/commet"
                 android:title="Comentarios" />
             <item
                 android:id="@+id/nav_send"
