@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void launchRingDialog(View v){
         final EditText texto = (EditText) findViewById(R.id.nombrecito);
-        Toast mensaje = Toast.makeText(getApplicationContext(), "Cargando Perfil de: " + texto.getText(), Toast.LENGTH_SHORT);
-        mensaje.show();
+        //Toast mensaje = Toast.makeText(getApplicationContext(), "Cargando Perfil de: " + texto.getText(), Toast.LENGTH_SHORT);
+        //mensaje.show();
 
         String  str=texto.getText().toString();
 
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             myIntent.putExtra("user", texto.getText().toString()); //Optional parameters
             MainActivity.this.startActivity(myIntent);
 
-            final ProgressDialog ringProgressDialog = ProgressDialog.show(MainActivity.this, "Please wait ...", "Load Profile", true);
+            final ProgressDialog ringProgressDialog = ProgressDialog.show(MainActivity.this, "Please wait ...","Cargando Perfil de: " + texto.getText().toString(), true);
             ringProgressDialog.setCancelable(true);
             new Thread(new Runnable() {
                 @Override
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     try {
                         // Here you should write your time consuming task...
                         // Let the progress ring for 10 seconds...
-                        Thread.sleep(800);
+                        Thread.sleep(1200);
                     } catch (Exception e) {
 
                     }
